@@ -1,0 +1,22 @@
+.page-tabs{display:flex;gap:8px;margin-top:24px;padding:5px;background:#e9eee7;border-radius:14px;width:max-content;max-width:100%}
+.page-tabs button{border:0;border-radius:10px;padding:11px 20px;color:#52675b;background:transparent;font-weight:700;min-height:45px}
+.page-tabs button[aria-selected="true"]{background:white;color:var(--green);box-shadow:0 2px 8px #18382b0a}
+.assets-summary{grid-template-columns:1.25fr 1fr 1fr}
+.assets-summary .amount{overflow-wrap:anywhere}
+.assets-intro{padding-top:32px}
+.assets-intro h1{font-size:clamp(28px,4vw,40px)}
+.assets-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;align-items:start}
+.account-balance{font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+.account-row{flex-wrap:wrap}
+.account-row .secondary-action{padding:7px 12px;min-height:40px;font-size:12px}
+.asset-status{font-size:13px;color:var(--green);margin:12px 0 0;min-height:20px}
+.asset-status.error{color:#99483f}
+.action:disabled{background:#9daaa2;cursor:default}
+.transfer-balance{color:var(--green);font-size:13px;background:var(--mint);padding:10px 12px;border-radius:10px;margin:15px 0 0}
+.asset-history .row-meta{white-space:normal;overflow-wrap:anywhere}
+.asset-history .row-title{white-space:normal;overflow-wrap:anywhere}
+.asset-history .row-amount{color:var(--green)}
+.history-more{margin-top:14px;width:100%}
+@media(max-width:900px){.assets-grid{grid-template-columns:1fr}.assets-summary{grid-template-columns:1fr 1fr}.assets-summary .primary{grid-column:1/-1}}
+@media(max-width:600px){.page-tabs{width:100%}.page-tabs button{flex:1;padding:11px 10px}.assets-summary .summary-card:last-child{grid-column:auto}.assets-summary .amount{font-size:23px}.assets-summary .primary .amount{font-size:32px}.account-row .row-main{flex-basis:calc(100% - 50px)}.account-row .account-balance{margin-left:47px;flex:1}.assets-intro{padding-top:26px}}
+@media(max-width:420px){.account-row .account-balance{margin-left:40px;font-size:18px}.assets-summary .amount{font-size:20px}.asset-history .row{flex-wrap:wrap}.asset-history .row-main{flex-basis:calc(100% - 45px)}.asset-history .row-amount{margin-left:40px}}
